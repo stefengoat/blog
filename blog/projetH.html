@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script> src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gasp.min.js"</script>
+    <title>Blog - Stefen - Projet Python</title>
+</head>
+<body class="html">
+    <header>
+        <class class="logo">
+            <a href="index.html">STEFEN</a>
+        </class>
+        
+        <nav>
+           <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Qui je suis ?</a></li>
+            <li><a href="annee.html">BTS SIO</a></li>
+            <li><a href="stage.html">Stage</a></li>
+            <li><a href="veille.html">Veille</a></li>
+           </ul>
+           <i class="fa-solid fa-bars" id="toggle"></i>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="Projet-HTML">Le projet HTML</h1>
+    
+        <div class="objectif">
+            <h2>Objectif du projet</h2>
+            <br>
+            <p id="texte">
+                Dans le cadre de notre apprentissage, il nous a été donné de créer un site web d'une bibliothèque en ligne. Celui-ci devait être dynamique et disposer de certains standards qui devaient figurer sur le site. Ce projet réalisé durant nos heures d'AP (1 fois par semaine) s'est produit par groupe de 3.
+                <br>
+                <br>
+                L'objectif principal du projet était de développer un site web d'une bibliothèque totalement fonctionnel et autonome. Tout cela grâce à ce qu'on a appris durant l'année et par l'apprentissage autonome.
+                <br>
+                <br>
+                Afin d'accéder à cet objectif, nous avons dû respecter quelques contraintes sur le contenu du site. Il devait apparaître sur la première page un widget de la météo par exemple. Pour réaliser le projet, nous avons utilisé principalement du code HTML et CSS pour l'aspect et le contenu du site, mais aussi de PHP afin de rendre celui-ci dynamique. Bien sûr, nous avons dans l'obligation de créer une base de données propre au site afin de gérer les livres ou encore les comptes utilisateurs fictifs. Le lien avec la base de données à été géré via PHP en globalité.
+                <br>
+                <br>
+                Selon le compte avec lequel on se connecte, on dispose de droits administrateurs dans lesquels on retrouve la gestion des livres en temps réels depuis le site. Ou une utilisation simple de n'importe quel utilisateur.
+                <br>
+                <br>
+                Le projet était a réaliser par étapes sans comptes-rendus, le projet final peut être téléchargé ci-dessous.
+                <br>
+                <br>
+                Compétences :
+                <br>
+                <br>
+                Identification et gestion des ressources numériques : maîtrise des techniques de recensement et d’organisation des ressources numériques pour répondre aux besoins opérationnels.<br>
+                Suivi et orientation des demandes : capacité à collecter, analyser et orienter les demandes afin d’assurer un traitement optimal des besoins.<br>
+                Contribution à l’évolution d’un site web : participation active au développement et à l’amélioration d’un site web en exploitant les données de l’organisation pour garantir sa pertinence et sa performance.<br>
+                Analyse des projets : aptitude à définir les objectifs, analyser les modalités d’organisation, et proposer des solutions adaptées pour mener à bien un projet.<br>
+                Planification et coordination : compétence dans la structuration des activités et la planification des tâches pour optimiser les délais et les ressources disponibles.
+                </p>
+        </div>
+    
+        <div class="pdf-modal hidden" id="pdfModal">
+            <div class="pdf-content">
+                <iframe src="" width="100%" height="100%"></iframe>
+            </div>
+            <button class="close-btn" onclick="closePdfModal()">Fermer</button>
+        </div>
+    
+        <a href="/images/autres/BiblioCAT.zip" class="telecharger-projet-html">Télécharger le projet</a>
+    
+    </main>
+
+
+
+
+
+    <footer>
+        <nav>
+            <ul class="contenu">
+             <li><a href="index.html">Accueil</a></li>
+             <li><a href="presentation.html">Qui je suis ?</a></li>
+             <li><a href="annee.html">BTS SIO</a></li>
+             <li><a href="stage.html">Stage</a></li>
+             <li><a href="veille.html">Veille</a></li>
+            </ul>
+            <p>Contact: srialland@la-joliverie.com</p>
+         </nav>
+    </footer>
+
+
+    <a href="#" class="retour-haut">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </a>
+
+    <script>
+        const menu = document.querySelector('.menu');
+        const toggle = document.getElementById('toggle');
+
+        toggle.onclick = function(){
+            menu.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>
