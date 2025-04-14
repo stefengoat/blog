@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script> src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gasp.min.js"</script>
+    <title>Blog - Stefen - Stage</title>
+</head>
+<body class="stage">
+    <header>
+        <class class="logo">
+            <a href="index.html">STEFEN</a>
+        </class>
+        
+        <nav>
+           <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Qui je suis ?</a></li>
+            <li><a href="annee.html">BTS SIO</a></li>
+            <li><a href="stage.html">Stage</a></li>
+            <li><a href="veille.html">Veille</a></li>
+           </ul>
+           <i class="fa-solid fa-bars" id="toggle"></i>
+        </nav>
+    </header>
+
+    <main>
+        <div class="donnees">
+            <div class="gauche">
+                <h1>Stage Première Année</h1>
+                <p class="texteG">
+                    Pour conclure ma première année de BTS SIO (Services Informatiques aux Organisations), j'ai réalisé un stage en entreprise d'une durée de cinq semaines. 
+                    Initialement prévu pour six semaines, il a été réduit à cinq en raison de difficultés à trouver une entreprise. 
+                    Ce stage s'est déroulé du 21 mai au 28 juin 2024 au sein du service informatique de la Laiterie du Val d'Ancenis, un site de production de produits laitiers sous la coopérative Laïta.
+                    <br>
+                    <br>
+                    L'objectif principal de ce stage était pour moi de découvrir comment l'informatique est utilisée de manière professionnelle dans une entreprise. 
+                    C'était aussi une opportunité pour acquérir de nouvelles compétences et connaissances, tout en mettant en pratique les notions étudiées en cours.
+                    <br>
+                    <br>
+                    Ce stage m'a énormément apporté, tant sur le plan professionnel que personnel. 
+                    J'ai pu expérimenter le travail en équipe, l'entraide, et découvrir le milieu professionnel de l'informatique.
+                </p>
+                <div class="bouton-telecharger-rapport1">
+                    <a href="images/RapportStage_Stage1.pdf" download="RapportStage_Stage1.pdf">Télécharger Rapport</a>
+                </div>
+            </div>
+            <div class="droite">
+                <h1>Stage Seconde Année</h1>
+                <p class="texteD">
+                
+                </p>
+                <div class="bouton-telecharger-rapport2">
+                    <a href="" download="">Télécharger Rapport</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <footer>
+        <nav>
+            <ul class="contenu">
+             <li><a href="index.html">Accueil</a></li>
+             <li><a href="presentation.html">Qui je suis ?</a></li>
+             <li><a href="annee.html">BTS SIO</a></li>
+             <li><a href="stage.html">Stage</a></li>
+             <li><a href="veille.html">Veille</a></li>
+            </ul>
+            <p>Contact: srialland@la-joliverie.com</p>
+         </nav>
+    </footer>
+
+
+
+    <a href="#" class="retour-haut">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </a>
+
+    <script>
+        const menu = document.querySelector('.menu');
+        const toggle = document.getElementById('toggle');
+
+        toggle.onclick = function(){
+            menu.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>

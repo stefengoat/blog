@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script> src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gasp.min.js"</script>
+    <title>Blog - Stefen - Présentation</title>
+</head>
+<body class="presentation">
+    <header>
+        <class class="logo">
+            <a href="index.html">STEFEN</a>
+        </class>
+        
+        <nav>
+           <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Qui je suis ?</a></li>
+            <li><a href="annee.html">BTS SIO</a></li>
+            <li><a href="stage.html">Stage</a></li>
+            <li><a href="veille.html">Veille</a></li>
+           </ul>
+           <i class="fa-solid fa-bars" id="toggle"></i>
+        </nav>
+    </header>
+
+    <main>
+        <div class="donnees">
+            <div class="cv-container">
+                <img class="CV" src="images/CV.jpg">
+                <div class="bouton-telecharger">
+                    <a href="images/CV.jpg" download="CV.jpg">Télécharger CV</a>
+                </div>
+            </div>
+            <div class="droite">
+                <h1>Qui je suis ?</h1>
+                <p class="texte">
+                    Je m'appelle Stefen Rialland et j'ai 19 ans. Je suis en seconde année de BTS SIO (Services informatiques aux Organisations).
+                    J'étudie au lycée La Joliverie à Saint-Sébastien, au sud de Nantes. (141 Rte de Clisson, 44230 Saint-Sébastien-sur-Loire)
+                    <br>
+                    <br>
+                    Avant d'arriver ici en 2023, j'ai obtenu mon bac Général avec les spécialités NSI (Numérique et Sciences Informatiques) et mathématiques, mention assez-bien.
+                    <br>
+                    <br>
+                    Depuis, je me suis plongé dans le monde de l'informatique, un domaine dans lequel je me projette pleinement. 
+                    Mon orientation véritable vers ce secteur s'est concrétisée avec mon inscription en BTS. 
+                    Ce cursus m'a permis d'acquérir des compétences et des connaissances spécifiques à l'informatique. 
+                    Aujourd'hui, je m'oriente davantage vers le développement, un domaine qui suscite en moi un intérêt croissant.
+                    Ce qui a eu pour finalité, le choix de l'option SLAM (Solutions Logicielles et Applications Métiers) en seconde année.
+                    <br>
+                    <br>
+                    J'envisage de poursuivre mes études une fois mon BTS terminé. Et plus tard,
+                    l'objectif est d'en faire mon travail, bien évidemment.
+
+                </p>
+            </div>
+        </div>
+    </main>
+    
+
+
+
+
+
+    <footer>
+        <nav>
+            <ul class="contenu">
+             <li><a href="index.html">Accueil</a></li>
+             <li><a href="presentation.html">Qui je suis ?</a></li>
+             <li><a href="annee.html">BTS SIO</a></li>
+             <li><a href="stage.html">Stage</a></li>
+             <li><a href="veille.html">Veille</a></li>
+            </ul>
+            <p>Contact: srialland@la-joliverie.com</p>
+         </nav>
+    </footer>
+
+
+    <a href="#" class="retour-haut">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </a>
+
+    <script>
+        const menu = document.querySelector('.menu');
+        const toggle = document.getElementById('toggle');
+
+        toggle.onclick = function(){
+            menu.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>
