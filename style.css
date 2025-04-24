@@ -1,0 +1,717 @@
+@import url('https://font.googleapis.com/ccs2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 400px;
+    overflow: auto;
+    background-position: center;
+    position: relative;
+}
+
+/* fond accueil*/
+body.accueil {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="600" cy="150" r="500" fill="%23453F3C"/></svg>'),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="600" cy="1350" r="250" fill="%23453F3C"/></svg>'),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1110" cy="900" r="450" fill="%232a2624"/></svg>') ;
+    background-size: cover;
+    margin: 0;
+    height: 180vh;
+    background-color: #FFFCF2;
+}
+
+/* fond qui je suis?*/
+body.presentation {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 100"><circle cx="2950" cy="550" r="1900" fill="%23453F3C"/></svg>')
+    ,url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1100" cy="1300" r="220" fill="%232a2624"/></svg>');
+    background-size: cover;
+    height: 180vh;
+    margin: 0;
+    background-color: #FFFCF2;
+}
+
+/* fond bts sio*/
+body.bts{
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1900" cy="50" r="400" fill="%23453F3C"/></svg>'),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="500" cy="1200" r="850" fill="%232a2624"/></svg>') ;
+    background-size: cover;
+    height: 200vh;
+    margin: 0;
+    background-color: #FFFCF2;
+}
+
+body.python, body.html, body.java, body.php, body.javaA  {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1900" cy="50" r="400" fill="%23453F3C"/></svg>'),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="500" cy="1200" r="850" fill="%232a2624"/></svg>') ;
+    background-size: cover;
+    height: 160vh;
+    margin: 0;
+    background-color: #FFFCF2;
+}
+
+/*fond stage*/
+body.stage {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 100"><circle cx="-950" cy="550" r="1900" fill="%23453F3C"/></svg>')
+    ,url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1820" cy="1150" r="220" fill="%232a2624"/></svg>');
+    background-size: cover;
+    height: 140vh;
+    margin: 0;
+    background-color: #FFFCF2;
+}
+
+/* fond veille*/
+body.veille {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1900" cy="50" r="400" fill="%23453F3C"/></svg>'),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="500" cy="1200" r="850" fill="%232a2624"/></svg>') ;
+    background-size: cover;
+    height: 210vh;
+    margin: 0;
+    background-color: #FFFCF2;
+}
+
+/* header*/
+header {
+    background-color: #F95738;
+    color: #FFFCF2;
+    height: 80px;
+    margin:20px;
+    border-radius: 16px;
+    position: fixed;
+    padding-left: 2rem;
+    padding-right: 2rem;;
+    font-size: 18px;
+    align-items: center;
+    display: flex;
+    width: 98%;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: auto;
+}
+
+.logo a {
+    color: #FFFCF2;
+}
+
+header nav, header nav .menu {
+    display: flex;
+    align-items: center;
+}
+
+header nav .menu li a {
+    position: relative;
+    color: #FFFCF2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 4rem;
+    border-radius: 16px;
+    transition: color 0.4s ease;
+    background-color: #F95738;
+    padding: 12px;
+}
+
+header nav .menu li a:hover {
+    color: #403D39;
+    background-color: #FFFCF2;
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+header nav #toggle {
+    font-size: 1.3rem;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+body .retour-haut {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F95738;
+    border-radius: 3rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+body .retour-haut.visible {
+    display: inline-flex;
+}
+
+body .retour-haut span {
+    color: white;
+    font-size: 3rem;
+    transition: 0.4 ease;
+}
+
+body .retour-haut:hover {
+    background-color: #fd8168;
+    transform: scale(1.05);
+}
+
+main {
+    flex: 1;
+}
+
+/*accueil*/
+.accueil main {
+    padding-top: 10%;
+}
+
+.accueil main .bienvenue {
+    padding-left: 12%;
+}
+
+#Bienvenue, #Stefen {
+    font-size: 70px;
+    color:#FFFCF2;
+}
+
+#Blog {
+    font-size: 60px;
+    color: #F95738;
+}
+
+.accueil main .moi {
+    padding-left: 45%;
+    padding-top: 12%;
+}
+
+.accueil main .moi .texte {
+    color: #FFFCF2;
+    font-size: 150%;
+}
+
+.accueil main .moi .texte1 {
+    color: #F95738;
+    font-size: 150%;
+    padding-top: 10%;
+}
+
+.accueil main .bouton-moi {
+    display: flex;
+    padding-top: 18%;
+    padding-left: 14%;
+    
+}
+
+#joliverie {
+    display: flex;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #FFFCF2;
+    border-radius: 30px;
+    margin-left: 23%;
+    margin-top: -8%;
+}
+
+.accueil main .bouton-moi a {
+    background-color: #F95738;
+    color: #FFFCF2;
+    font-size: 200%;
+    padding: 15px;
+    border-radius: 16px;
+    transition: 0.4s ease;
+}
+
+.accueil main .bouton-moi a:hover {
+    color: #403D39;
+    background-color: #FFFCF2;
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+.bonus {
+    padding-left: 24%;
+    align-items: center;
+    justify-content: center;
+    color: #F95738;
+    font-size: 110%;
+}
+
+.accueil main .bouton-annee {
+    display: flex;
+    padding-top: 1%;
+}
+
+.accueil main .bouton-stage {
+    display: flex;
+    padding-top: 1%;
+}
+
+.accueil main .bouton-annee a {
+    background-color: #FFFCF2;
+    color: #403D39;
+    font-size: 200%;
+    padding: 15px;
+    border-radius: 16px;
+    transition: 0.4s ease;
+}
+
+.accueil main .bouton-annee a:hover {
+    color: #FFFCF2;
+    background-color: #F95738;
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+.accueil main .bouton-stage a {
+    background-color: #FFFCF2;
+    color: #403D39;
+    font-size: 200%;
+    padding: 15px;
+    border-radius: 16px;
+    transition: 0.4s ease;
+}
+
+.accueil main .bouton-stage a:hover {
+    color: #FFFCF2;
+    background-color: #F95738;
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+/*Qui je suis ?*/
+
+.presentation main {
+    padding-top: 10%;
+}
+
+.presentation .donnees {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cv-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 40%; 
+}
+
+.CV {
+    width: 100%; 
+    height: auto;
+    border: 2px solid #403D39;
+    margin-bottom: 20px; 
+}
+
+.bouton-telecharger a {
+    background-color: #F95738;
+    color: #FFFCF2;
+    font-size: 150%;
+    padding: 10px 20px;
+    border-radius: 16px;
+    border: 2px solid #403D39;
+    text-align: center;
+    display: inline-block;
+    transition: 0.4s ease;
+}
+
+.bouton-telecharger a:hover {
+    color: #403D39;
+    background-color: #FFFCF2;
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
+.droite {
+    color:#FFFCF2;
+    font-size: 150%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 7%;
+}
+
+.presentation .texte {
+    padding-top: 10%;
+}
+
+/*BTS SIO*/
+
+.bts main {
+    padding-top: 10%;
+}
+
+#image-python, #image-html, #image-java, #image-php, #image-javaA {
+    width: 40%;
+    height: auto;
+    background-color: #FFFCF2;
+    border: 2px solid #403D39;
+    border-radius: 50%;
+    padding: 5%;
+}
+
+.bts main .python, .bts main .html, .bts main .java, .bts main .php, .bts main .javaA{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+    padding-left: 15%;
+}
+
+.bts main .python h1, .bts main .html h1, .bts main .java h1, .bts main .php h1, .bts main .javaA h1,
+.bts main .python h2, .bts main .html h2, .bts main .java h2, .bts main .php h2, .bts main .javaA h2{
+    margin-left: -10%;
+    width: 80%;
+    text-shadow: 
+        -1px -1px 0 #FFFCF2,  
+         1px -1px 0 #FFFCF2,
+        -1px  1px 0 #FFFCF2,
+         1px  1px 0 #FFFCF2;
+}
+
+.competences-links {
+    display: flex;
+    justify-content: center; 
+    margin-top: 3%; 
+}
+
+.competences-link {
+    padding: 0.7%;
+    border-radius: 50px;
+    font-size: 130%;
+    background-color: #FFFCF2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #403D39;
+    color: #403D39;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.competences-link:hover {
+    transform: scale(1.05);
+    background-color: lightslategray;
+    color: #FFFCF2;
+    
+}
+
+
+/* PPROJETS */
+
+.html main, .java main, .python main, .php main, .javaA main {
+    padding-top: 10%;
+}
+
+#Projet-Java, #Projet-Python, #Projet-HTML, #Projet-Php, #Projet-JavaA {
+    width:40%;
+    border-radius: 50px;
+    height: auto;
+    font-size: 200%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #FFFCF2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #403D39;
+    color:#403D39;
+}
+
+.python main .objectif, .html main .objectif, .java main .objectif, .php main .objectif, .javaA main .objectif {
+    margin-top: 3%;
+    width: 70%; 
+    height: auto;
+    border-radius: 50px;
+    font-size: 110%;
+    background-color: #FFFCF2;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #403D39;
+    color: #403D39;
+}
+
+.python main .objectif h2, .html main .objectif h2, .java main .objectif h2, .php main .objectif h2, .javaA main .objectif h2 {
+    text-decoration: underline;
+    text-decoration-color: #403D39;
+    margin-bottom: 3%; 
+}
+
+.python main #texte, .html main #texte, .java main #texte, .php main #texte, .javaA main #texte {
+    margin: 0;
+    font-size: 110%;
+    display: flex;
+    flex-direction: column;
+}
+
+.telecharger-projet-html, .telecharger-projet-java {
+    margin-top: 2%;
+    width: 10%;
+    border-radius: 50px;
+    font-size: 110%;
+    background-color: #FFFCF2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #403D39;
+    color:#403D39;
+    transition: 0.4s ease;
+}
+
+.telecharger-projet-html:hover, .telecharger-projet-java:hover {
+    transform: scale(1.05);
+    background-color: lightslategray;
+    color: #FFFCF2;
+}
+
+.pdf-links {
+    display: flex;
+    justify-content: center; 
+    margin-top: 3%; 
+}
+
+.pdf-link {
+    margin: 0 0.7%; 
+    width: 5%;
+    height: 50px; 
+    border-radius: 50px;
+    font-size: 115%;
+    background-color: #FFFCF2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #403D39;
+    color: #403D39;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.pdf-link:hover {
+    transform: scale(1.05);
+    background-color: lightslategray;
+    color: #FFFCF2;
+    
+}
+
+/*JAVA SCRIPT PDF VISU*/
+.pdf-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pdf-content {
+    width: 80%;
+    height: 80%;
+}
+
+.hidden {
+    display: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*Stage */
+
+.stage main {
+    padding-top: 10%;
+}
+
+.stage .donnees {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stage .gauche {
+    color:#FFFCF2;
+    font-size: 150%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.stage .texteG {
+    padding-top: 5%;
+}
+
+.bouton-telecharger-rapport1 a {
+    background-color: #FFFCF2;
+    color: #403D39;
+    font-size: 130%;
+    padding: 10px 20px;
+    border-radius: 16px;
+    border: 2px solid #403D39;
+    text-align: center;
+    display: inline-block;
+    margin-top: 5%;
+    transition: 0.4s ease;
+}
+
+.bouton-telecharger-rapport1 a:hover {
+    color: #FFFCF2;
+    background-color: #F95738;
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+.stage .droite {
+    color:#403D39;
+    font-size: 150%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 7%;
+    text-align: center;
+}
+
+.stage .texteD {
+    margin-top: 5%;
+}
+
+.bouton-telecharger-rapport2 a {
+    background-color: #F95738;
+    color: #FFFCF2;
+    font-size: 130%;
+    padding: 10px 20px;
+    border-radius: 16px;
+    border: 2px solid #403D39;
+    text-align: center;
+    display: inline-block;
+    margin-top: 5%;
+    transition: 0.4s ease;
+}
+
+.bouton-telecharger-rapport2 a:hover {
+    color: #403D39;
+    background-color: #FFFCF2;
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+/*Veille */
+
+.veille main {
+    padding-top: 10%;
+}
+
+.veille main .veilleTechno{
+    font-size: 120%;
+    padding-left: 25%;
+    width: 80%;
+    text-shadow: 
+        -1px -1px 0 #FFFCF2,  
+         1px -1px 0 #FFFCF2,
+        -1px  1px 0 #FFFCF2,
+         1px  1px 0 #FFFCF2;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #797774;
+    color: #FFFCF2;
+    padding: 3rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+footer nav, footer nav .contenu {
+    display: flex;
+    align-items: center;
+    margin-left: 8%;
+}
+
+footer nav .contenu li a {
+    position: relative;
+    color: #FFFCF2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 12px;
+}
+
+
+
+
+@media (max-width: 820px) {
+    header nav .menu{
+        flex-direction: column;
+        row-gap: 2rem;
+        position: absolute;
+        right: -100%;
+        top: 110px;
+        width: 100%;
+        height: calc(100vh - 110px);
+        padding-top: 90px;
+        background: #fd8168;
+        z-index: 10;
+        transition: right 0.4s ease;
+    }
+
+    header nav .menu.active {
+        right: 0;
+    }
+
+    header nav .menu li a {
+        margin-left: unset;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #FFFCF2;
+        width: 395px;
+        height: 60px;
+        line-height: 60px;
+        display: block;
+        text-align: center;
+        border-radius: 5px;
+        transition: 0.25s ease;
+    }
+
+    header nav .menu li a:hover {
+        background: white;
+        color: #fd8168;
+    }
+}
