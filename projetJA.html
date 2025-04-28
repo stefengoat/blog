@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <script> src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gasp.min.js"</script>
-    <title>Blog - Stefen - Projet Python</title>
+    <title>Blog - Stefen - Projet Java Modération</title>
 </head>
 <body class="javaA">
     <header>
@@ -28,28 +28,31 @@
     </header>
 
     <main>
-        <h1 id="Projet-JavaA">Le projet Python</h1>
+        <h1 id="Projet-JavaA">Le projet Java Modération</h1>
         
         <div class="objectif">
             <h2>Objectif du projet</h2>
             <br>
             <p id="texte">
-                Chez STESIO, nous avons été chargés de développer une solution automatisée pour la gestion des bases de données des utilisateurs au sein de l'entreprise. Ce projet était en binôme.
+                Dans le cadre de l’évolution du site r3st0.fr, une application Java a été développée pour les modérateurs, destinée à être installée sur leurs postes de travail.
                 <br>
                 <br>
-                L'objectif principal était de permettre à chaque utilisateur disposant d'un compte dans l'annuaire Active Directory (AD) de bénéficier d'une base de données personnelle, tout en assurant un accès sécurisé et individualisé.
+                Cette application permet de contrôler les avis déposés par les utilisateurs, avec la possibilité de supprimer ou bloquer ceux ne respectant pas la charte d’utilisation du site
                 <br>
                 <br>
-                Pour ce faire, il fallait récupérer la liste des utilisateurs en interrogeant l'annuaire AD du contrôleur de domaine CDSTESIO. Ces informations ont ensuite été exportées dans un fichier CSV.
+                L’accès à l’application est sécurisé par un système d’authentification pour chaque modérateur. 
                 <br>
                 <br>
-                Ensuite, nous avons conçu un script Python capable de lire ce fichier CSV et de générer automatiquement les commandes SQL nécessaires à la création des comptes utilisateurs, des bases de données associées, ainsi que des permissions d'accès. Chaque utilisateur se voit ainsi attribuer une base de données distincte, accessible uniquement par lui-même.
+                Ce projet a été mené en équipe de quatre personnes, selon une approche collaborative
                 <br>
                 <br>
-                Enfin, le script génère un fichier SQL qui est exécuté sur le serveur de base de données WEB-BD-STESIO. Cette étape leur permet ainsi de se connecter à distance à leur propre espace de travail sur le serveur.
+                Nous avons travaillé à partir de User Story fonctionnels, avec des réunions régulières pour coordonner l’avancement et ajuster les choix techniques.
                 <br>
                 <br>
-                Le projet devait être accompagné de comptes-rendus de chacune des étapes à procéder. Vous pouvez les consulter.
+                L’application repose sur la base de données existante, laquelle a pu être adaptée si nécessaire. 
+                <br>
+                <br>
+                Le projet devait être accompagné de comptes-rendus de chacune des itérations. Vous pouvez les consulter.
                 <br>
                 <br>
                 Compétences :
@@ -62,26 +65,17 @@
         </div>
         
         <div class="pdf-links">
-            <div class="pdf-link" onclick="openPdf('pdf_python/etape_01.pdf')">
-                Etape 01
+            <div class="pdf-link" style="width: 7%;" onclick="openPdf('pdf_javaA/rapport_iteration_1.pdf')">
+                Itération 01
             </div>
-            <div class="pdf-link" onclick="openPdf('pdf_python/etape_02.pdf')">
-                Etape 02
+            <div class="pdf-link" style="width: 7%;" onclick="openPdf('pdf_javaA/rapport_iteration_2.pdf')">
+                Itération 02
             </div>
-            <div class="pdf-link" onclick="openPdf('pdf_python/etape_03.pdf')">
-                Etape 03
+            <div class="pdf-link" style="width: 7%;" onclick="openPdf('pdf_javaA/rapport_iteration_3.pdf')">
+                Itération 03
             </div>
-            <div class="pdf-link" onclick="openPdf('pdf_python/etape_04.pdf')">
-                Etape 04
-            </div>
-            <div class="pdf-link" onclick="openPdf('pdf_python/etape_05.pdf')">
-                Etape 05
-            </div>
-            <div class="pdf-link" onclick="openPdf('pdf_python/etape_06.pdf')">
-                Etape 06
-            </div>
-            <div class="pdf-link" onclick="openPdf('pdf_python/etape_07.pdf')">
-                Etape 07
+            <div class="pdf-link" style="width: 7%;" onclick="openPdf('pdf_javaA/rapport_iteration_4.pdf')">
+                Itération 04
             </div>
         </div>
         

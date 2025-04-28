@@ -62,7 +62,7 @@ body.python, body.html, body.java, body.php, body.javaA  {
 }
 
 /*fond stage*/
-body.stage {
+body.stage, body.stage1, body.stage2 {
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 100"><circle cx="-950" cy="550" r="1900" fill="%23453F3C"/></svg>')
     ,url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1820" cy="1150" r="220" fill="%232a2624"/></svg>');
     background-size: cover;
@@ -550,28 +550,54 @@ main {
 /*Stage */
 
 .stage main {
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 .stage .donnees {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
-.stage .gauche {
+.stage .gauche, .stage .droite {
     color:#FFFCF2;
+    padding: 5%;
     font-size: 150%;
-    width: 40%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    width: 50%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.stage .texteG {
+.stage .droite {
+    color:#403D39;
+}
+
+.stage .texteG, .stage .texteD {
     padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.bouton-savoir-plus-stage1 a, .bouton-savoir-plus-stage2 a {
+    background-color: #FFFCF2;
+    color: #403D39;
+    font-size: 60%;
+    padding: 10px 20px;
+    border-radius: 16px;
+    border: 2px solid #403D39;
+    text-align: center;
+    display: inline-block;
+    transition: 0.4s ease;
+}
+
+.bouton-savoir-plus-stage1 a:hover, .bouton-savoir-plus-stage2 a:hover {
+    color: #FFFCF2;
+    background-color: #797774;
+    transform: scale(1.05);
+    transition: 0.6s;
 }
 
 .bouton-telecharger-rapport1 a {
@@ -594,18 +620,20 @@ main {
     transition: 0.6s;
 }
 
-.stage .droite {
-    color:#403D39;
-    font-size: 150%;
-    width: 40%;
-    align-items: center;
-    justify-content: center;
-    padding-left: 7%;
-    text-align: center;
+.stage .texteD, .stage .droite h1 {
+    text-shadow: 
+        -1px -1px 0 #FFFCF2,  
+         1px -1px 0 #FFFCF2,
+        -1px  1px 0 #FFFCF2,
+         1px  1px 0 #FFFCF2;
 }
 
-.stage .texteD {
-    margin-top: 5%;
+.stage .texteG, .stage .gauche h1 {
+    text-shadow: 
+        -1px -1px 0 #403D39,  
+         1px -1px 0 #403D39,
+        -1px  1px 0 #403D39,
+         1px  1px 0 #403D39;
 }
 
 .bouton-telecharger-rapport2 a {

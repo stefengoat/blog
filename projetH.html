@@ -60,6 +60,13 @@
                 </p>
         </div>
     
+        
+        <div class="pdf-links">
+            <div class="pdf-link" style="width: 10%;" onclick="openPdf('images/BiblioCAT_PEIXOTO_PORTOLLEAU_RIALLAND.docx.pdf')">
+                Compte-rendu
+            </div>
+        </div>
+
         <div class="pdf-modal hidden" id="pdfModal">
             <div class="pdf-content">
                 <iframe src="" width="100%" height="100%"></iframe>
@@ -99,6 +106,15 @@
 
         toggle.onclick = function(){
             menu.classList.toggle('active');
+        }
+
+        function openPdf(pdfUrl) {
+            document.getElementById("pdfModal").classList.remove("hidden");
+            document.querySelector(".pdf-content iframe").src = pdfUrl;
+        }
+
+        function closePdfModal() {
+            document.getElementById("pdfModal").classList.add("hidden");
         }
     </script>
     

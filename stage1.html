@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script> src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gasp.min.js"</script>
+    <title>Blog - Stefen - Stage Laïta</title>
+</head>
+<body class="stage1">
+    <header>
+        <class class="logo">
+            <a href="index.html">STEFEN</a>
+        </class>
+        
+        <nav>
+           <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Qui je suis ?</a></li>
+            <li><a href="annee.html">BTS SIO</a></li>
+            <li><a href="stage.html">Stage</a></li>
+            <li><a href="veille.html">Veille</a></li>
+           </ul>
+           <i class="fa-solid fa-bars" id="toggle"></i>
+        </nav>
+    </header>
+
+    <main>
+        
+    </main>
+
+
+
+
+    <footer>
+        <nav>
+            <ul class="contenu">
+             <li><a href="index.html">Accueil</a></li>
+             <li><a href="presentation.html">Qui je suis ?</a></li>
+             <li><a href="annee.html">BTS SIO</a></li>
+             <li><a href="stage.html">Stage</a></li>
+             <li><a href="veille.html">Veille</a></li>
+            </ul>
+            <p>Contact: srialland@la-joliverie.com</p>
+         </nav>
+    </footer>
+
+
+
+    <a href="#" class="retour-haut">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </a>
+
+    <script>
+        const menu = document.querySelector('.menu');
+        const toggle = document.getElementById('toggle');
+
+        toggle.onclick = function(){
+            menu.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>
