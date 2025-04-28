@@ -14,11 +14,11 @@ html{
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     min-width: 400px;
-    overflow: auto;
     background-position: center;
-    position: relative;
 }
 
 /* fond accueil*/
@@ -56,7 +56,7 @@ body.python, body.html, body.java, body.php, body.javaA  {
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1900" cy="50" r="400" fill="%23453F3C"/></svg>'),
     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="500" cy="1200" r="850" fill="%232a2624"/></svg>') ;
     background-size: cover;
-    height: 160vh;
+    height: 300vh;
     margin: 0;
     background-color: #FFFCF2;
 }
@@ -514,6 +514,61 @@ main {
     
 }
 
+.python main .competences, .html main .competences, .java main .competences, .php main .competences, .javaA main .competences {
+    margin-top: 3%;
+    width: 70%; 
+    height: auto;
+    border-radius: 50px;
+    font-size: 110%;
+    background-color: #FFFCF2;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #403D39;
+    color: #403D39;
+}
+
+.python main .competences h2, .html main .competences h2, .java main .competences h2, .php main .competences h2, .javaA main .competences h2 {
+    text-decoration: underline;
+    text-decoration-color: #403D39;
+    margin-bottom: 3%; 
+}
+
+.python main .competences #texte, .html main .competences #texte, .java main .competences #texte, .php main .competences #texte, .javaA main .competences #texte {
+    margin: 0;
+    font-size: 110%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Preuve HTML*/
+
+.bouton-html-sauvegardes a {
+    margin-top: 2%;
+    width: 10%;
+    border-radius: 50px;
+    font-size: 110%;
+    background-color: #FFFCF2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #403D39;
+    color:#403D39;
+    transition: 0.4s ease;
+}
+
+.bouton-html-sauvegardes a:hover {
+    transform: scale(1.05);
+    background-color: lightslategray;
+    color: #FFFCF2;
+}
+
 /*JAVA SCRIPT PDF VISU*/
 .pdf-modal {
     position: fixed;
@@ -680,9 +735,6 @@ footer {
     color: #FFFCF2;
     padding: 3rem;
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 footer nav, footer nav .contenu {
