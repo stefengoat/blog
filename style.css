@@ -17,27 +17,37 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    min-width: 400px;
-    background-position: center;
+    background-color: #FFFCF2;
 }
 
 /* fond accueil*/
 body.accueil {
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="600" cy="150" r="500" fill="%23453F3C"/></svg>'),
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="600" cy="1350" r="250" fill="%23453F3C"/></svg>'),
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1110" cy="900" r="450" fill="%232a2624"/></svg>') ;
+    background:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='70' cy='20' r='45' fill='%23453F3C'/></svg>") no-repeat,
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='30' cy='90' r='25' fill='%23453F3C'/></svg>") no-repeat,
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='90' cy='70' r='35' fill='%232a2624'/></svg>") no-repeat;
+    background-size: 100%, 100%, 100%;
+    background-position: top right, bottom left, center right;
     background-size: cover;
+    height: auto;
+    min-height: 100vh;
     margin: 0;
-    height: 180vh;
     background-color: #FFFCF2;
 }
 
 /* fond qui je suis?*/
 body.presentation {
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 100"><circle cx="2950" cy="550" r="1900" fill="%23453F3C"/></svg>')
-    ,url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1100" cy="1300" r="220" fill="%232a2624"/></svg>');
+    background:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='90' cy='30' r='45' fill='%23453F3C'/></svg>") no-repeat,
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='90' r='20' fill='%232a2624'/></svg>") no-repeat;
+    background-size: 100%, 100%;
+    background-position: right top, left bottom; 
+
+    /*background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 100"><circle cx="2950" cy="550" r="1900" fill="%23453F3C"/></svg>') ,url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1100" cy="1300" r="220" fill="%232a2624"/></svg>');
+    */
     background-size: cover;
-    height: 180vh;
+    height: auto;
+    min-height: 100vh;
     margin: 0;
     background-color: #FFFCF2;
 }
@@ -47,7 +57,8 @@ body.bts{
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1900" cy="50" r="400" fill="%23453F3C"/></svg>'),
     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="500" cy="1200" r="850" fill="%232a2624"/></svg>') ;
     background-size: cover;
-    height: 200vh;
+    height: auto;
+    min-height: 100vh;
     margin: 0;
     background-color: #FFFCF2;
 }
@@ -56,7 +67,8 @@ body.python, body.html, body.java, body.php, body.javaA  {
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1900" cy="50" r="400" fill="%23453F3C"/></svg>'),
     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="500" cy="1200" r="850" fill="%232a2624"/></svg>') ;
     background-size: cover;
-    height: 180vh;
+    height: auto;
+    min-height: 100vh;
     margin: 0;
     background-color: #FFFCF2;
 }
@@ -66,7 +78,8 @@ body.stage {
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 100"><circle cx="-950" cy="550" r="1900" fill="%23453F3C"/></svg>')
     ,url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1820" cy="1150" r="220" fill="%232a2624"/></svg>');
     background-size: cover;
-    height: 160vh;
+    height: auto;
+    min-height: 100vh;
     margin: 0;
     background-color: #FFFCF2;
 }
@@ -75,7 +88,8 @@ body.stage1 {
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 100"><circle cx="-950" cy="550" r="1900" fill="%23453F3C"/></svg>')
     ,url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1820" cy="1150" r="220" fill="%232a2624"/></svg>');
     background-size: cover;
-    height: 230vh;
+    height: auto;
+    min-height: 100vh;
     margin: 0;
     background-color: #FFFCF2;
 }
@@ -84,7 +98,8 @@ body.stage2 {
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 100"><circle cx="-950" cy="550" r="1900" fill="%23453F3C"/></svg>')
     ,url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1820" cy="1150" r="220" fill="%232a2624"/></svg>');
     background-size: cover;
-    height: 300vh;
+    height: auto;
+    min-height: 100vh;
     margin: 0;
     background-color: #FFFCF2;
 }
@@ -94,7 +109,7 @@ body.veille {
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1900" cy="50" r="400" fill="%23453F3C"/></svg>'),
     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="500" cy="1200" r="850" fill="%232a2624"/></svg>') ;
     background-size: cover;
-    height: 210vh;
+    min-height: 100vh;
     margin: 0;
     background-color: #FFFCF2;
 }
@@ -188,6 +203,7 @@ body .retour-haut:hover {
 
 main {
     flex: 1;
+    padding-top: 120px;
 }
 
 /*accueil*/
@@ -197,6 +213,14 @@ main {
 
 .accueil main .bienvenue {
     padding-left: 12%;
+}
+
+.accueil main .bienvenue, .accueil main .moi, .bonus  {
+    text-shadow: 
+        -1px -1px 0 #403D39,  
+         1px -1px 0 #403D39,
+        -1px  1px 0 #403D39,
+         1px  1px 0 #403D39;
 }
 
 #Bienvenue, #Stefen {
@@ -365,6 +389,11 @@ main {
 
 .presentation .texte {
     padding-top: 10%;
+    text-shadow: 
+        -1px -1px 0 #403D39,  
+         1px -1px 0 #403D39,
+        -1px  1px 0 #403D39,
+         1px  1px 0 #403D39;
 }
 
 /*BTS SIO*/
@@ -380,6 +409,11 @@ main {
     border: 2px solid #403D39;
     border-radius: 50%;
     padding: 5%;
+}
+
+#image-python:hover, #image-html:hover, #image-java:hover, #image-php:hover, #image-javaA:hover {
+    transform: scale(1.2);
+    transition: 0.4s ease;
 }
 
 .bts main .python, .bts main .html, .bts main .java, .bts main .php, .bts main .javaA{
@@ -861,21 +895,11 @@ main {
     transition: 0.6s;
 }
 
-/* STAGE 1 et 2 */
-
-.stage1 .donnees .texte, .stage2 .donnees .texte {
-    text-shadow: 
-        -1px -1px 0 #FFFCF2,  
-         1px -1px 0 #FFFCF2,
-        -1px  1px 0 #FFFCF2,
-         1px  1px 0 #FFFCF2;
-}
-
-/* STAGE 1 */
-
-.stage1 main {
+.stage1 main, .stage2 main {
     padding-top: 10%;
 }
+
+/* Stage 1 et 2 */
 
 #stage-laita {
     width:40%;
@@ -892,108 +916,6 @@ main {
     margin-right: auto;
     border: 3px solid #403D39;
     color:#403D39;
-}
-
-.stage1 .contexte {
-    margin-top: 3%;
-    width: 70%; 
-    height: auto;
-    border-radius: 50px;
-    font-size: 130%;
-    background-color: #FFFCF2;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    padding: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px solid #403D39;
-    color: #403D39;
-}
-
-.stage1 main .contexte h2 {
-    text-decoration: underline;
-    text-decoration-color: #403D39;
-    margin-bottom: 3%; 
-}
-
-.stage1 main .texteC{
-    margin: 0;
-    font-size: 110%;
-    display: flex;
-    flex-direction: column;
-}
-
-.stage1 .donnees {
-    display: flex;
-    flex-direction: column;
-    padding: 3%;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
-.stage1 .section1,
-.stage1 .section2,
-.stage1 .section3 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 1%;
-    padding-top: 1%;
-}
-
-.stage1 .section2 {
-    flex-direction: row-reverse;
-}
-
-.stage1 .section1 img,
-.stage1 .section2 img,
-.stage1 .section3 img {
-    width: 40%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 8px;
-}
-
-.stage1 .texte {
-    width: 70%;
-    padding: 0 20px;
-    font-size: 130%;
-}
-
-.stage1 main .competences {
-    width: 70%; 
-    height: auto;
-    border-radius: 50px;
-    font-size: 110%;
-    background-color: #FFFCF2;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    padding: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px solid #403D39;
-    color: #403D39;
-}
-
-.stage1 main .competences h2 {
-    text-decoration: underline;
-    text-decoration-color: #403D39;
-    margin-bottom: 3%; 
-}
-
-.stage1 main .competences #texte {
-    margin: 0;
-    font-size: 130%;
-    display: flex;
-    flex-direction: column;
-}
-
-/* STAGE 2 */
-
-.stage2 main {
-    padding-top: 10%;
 }
 
 #stage-datagrowb {
@@ -1013,16 +935,16 @@ main {
     color:#403D39;
 }
 
-.stage2 .contexte {
+/* CONTEXTE */
+.stage1 .contexte, .stage2 .contexte {
     margin-top: 3%;
-    width: 70%; 
-    height: auto;
+    width: 70%;
     border-radius: 50px;
     font-size: 130%;
     background-color: #FFFCF2;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
     padding: 2%;
     margin-left: auto;
     margin-right: auto;
@@ -1030,66 +952,99 @@ main {
     color: #403D39;
 }
 
-.stage2 main .contexte h2 {
+.stage1 .contexte h2, .stage2 .contexte h2 {
     text-decoration: underline;
     text-decoration-color: #403D39;
-    margin-bottom: 3%; 
+    margin-bottom: 3%;
 }
 
-.stage2 main .texteC {
+.stage1 .texteC, .stage2 .texteC {
     margin: 0;
     font-size: 110%;
     display: flex;
     flex-direction: column;
 }
 
-.stage2 .donnees {
+/* DONNEES */
+.stage1 .donnees, .stage2 .donnees {
+    margin-top: 3%;
+    width: 70%;
+    border-radius: 50px;
+    font-size: 130%;
+    background-color: #FFFCF2;
     display: flex;
     flex-direction: column;
-    padding: 3%;
-    padding-left: 15%;
-    padding-right: 15%;
+    align-items: center;
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #403D39;
+    color: #403D39;
 }
+
+/* SECTIONS */
+.stage1 .section1,
+.stage1 .section2,
+.stage1 .section3,
 
 .stage2 .section1,
 .stage2 .section2,
-.stage2 .section3 {
+.stage2 .section3{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 1%;
-    padding-top: 1%;
+    padding: 1% 0;
+    width: 100%;
 }
 
-.stage2 .section2 {
+.stage1 .section2, .stage1 .section2 {
     flex-direction: row-reverse;
 }
 
+.stage1 .section1 h2,
+.stage1 .section2 h2,
+.stage1 .section3 h2,
+
+.stage2 .section1 h2,
+.stage2 .section2 h2,
+.stage2 .section3 h2{
+    font-size: 130%;
+}
+
+.stage1 .section1 img,
+.stage1 .section2 img,
+.stage1 .section3 img,
+
 .stage2 .section1 img,
 .stage2 .section2 img,
-.stage2 .section3 img {
+.stage2 .section3 img{
     width: 40%;
     max-width: 200px;
     height: auto;
     border-radius: 8px;
 }
 
-.stage2 .texte {
+.stage1 .texte, .stage2 .texte {
     width: 70%;
-    padding: 0 20px;
-    font-size: 130%;
+    font-size: 110%;
+    display: flex;
+    flex-direction: column;
 }
 
-.stage2 main .competences {
+.stage1 .section2, .stage2 .section2 { 
+    flex-direction: row-reverse; 
+}
+
+/* COMPETENCES */
+.stage1 .competences, .stage2 .competences {
     margin-top: 3%;
-    width: 70%; 
-    height: auto;
+    width: 70%;
     border-radius: 50px;
-    font-size: 130%;
+    font-size: 110%;
     background-color: #FFFCF2;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
     padding: 2%;
     margin-left: auto;
     margin-right: auto;
@@ -1097,15 +1052,15 @@ main {
     color: #403D39;
 }
 
-.stage2 main .competences h2 {
+.stage1 .competences h2, .stage2 .competences h2 {
     text-decoration: underline;
     text-decoration-color: #403D39;
-    margin-bottom: 3%; 
+    margin-bottom: 3%;
 }
 
-.stage2 main .competences #texte {
+.stage1 .competences .texte, .stage2 .competences .texte {
     margin: 0;
-    font-size: 110%;
+    font-size: 130%;
     display: flex;
     flex-direction: column;
 }

@@ -1,0 +1,349 @@
+/* ===============================
+   RESET + BASE
+=================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #FFFCF2;
+}
+
+main {
+    flex: 1;
+    padding-top: 120px;
+}
+
+/* ===============================
+   HEADER
+=================================*/
+
+header {
+    position: fixed;
+    top: 20px;
+    left: 1%;
+    width: 98%;
+    height: 80px;
+    background-color: #F95738;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFFCF2;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    color: #FFFCF2;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #FFFCF2;
+    color: #403D39;
+}
+
+/* ===============================
+   SECTIONS GÉNÉRALES
+=================================*/
+
+.section-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background-color: #FFFCF2;
+    border: 3px solid #403D39;
+    border-radius: 30px;
+    padding: 2rem;
+    margin: 2rem auto;
+}
+
+/* ===============================
+   BOUTONS
+=================================*/
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 16px;
+    border: 2px solid #403D39;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #F95738;
+    color: #FFFCF2;
+}
+
+.btn-primary:hover {
+    background-color: #FFFCF2;
+    color: #403D39;
+}
+
+.btn-light {
+    background-color: #FFFCF2;
+    color: #403D39;
+}
+
+.btn-light:hover {
+    background-color: #F95738;
+    color: #FFFCF2;
+}
+
+/* ===============================
+   IMAGES
+=================================*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===============================
+   FLEX SECTIONS
+=================================*/
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ===============================
+   STAGE / PRESENTATION / BTS
+=================================*/
+
+.content-wrapper {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.content-wrapper .text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* ===============================
+   FOOTER
+=================================*/
+
+footer {
+    background-color: #797774;
+    color: #FFFCF2;
+    padding: 3rem;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* ===============================
+   RESPONSIVE
+=================================*/
+
+@media (max-width: 900px) {
+
+    header nav ul {
+        position: absolute;
+        top: 100px;
+        right: -100%;
+        flex-direction: column;
+        width: 100%;
+        background-color: #F95738;
+        padding: 2rem 0;
+        transition: right 0.3s ease;
+    }
+
+    header nav ul.active {
+        right: 0;
+    }
+
+    .flex-row {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        height: 70px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding-top: 100px;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+}
+
+/* ===========================
+   CORRECTIONS RESPONSIVE
+=========================== */
+
+/* SUPPRESSION DES HAUTEURS FIXES */
+body,
+body.accueil,
+body.presentation,
+body.bts,
+body.python,
+body.html,
+body.java,
+body.php,
+body.javaA,
+body.stage,
+body.stage1,
+body.stage2,
+body.veille {
+    height: auto;
+    min-height: 100vh;
+}
+
+/* SUPPRESSION MIN-WIDTH */
+body {
+    min-width: unset;
+}
+
+/* CONTENEURS GLOBAUX */
+main {
+    padding-top: 120px;
+}
+
+/* ===========================
+   FLEX MOBILE FIX
+=========================== */
+
+@media (max-width: 900px) {
+
+    /* Toutes les sections en colonne */
+    .presentation .donnees,
+    .stage .donnees,
+    .stage1 .section1,
+    .stage1 .section2,
+    .stage1 .section3,
+    .stage2 .section1,
+    .stage2 .section2,
+    .stage2 .section3,
+    .bts main .python,
+    .bts main .html,
+    .bts main .java,
+    .bts main .php,
+    .bts main .javaA {
+        flex-direction: column !important;
+        text-align: center;
+        padding-left: 0 !important;
+    }
+
+    /* Images */
+    #image-python,
+    #image-html,
+    #image-java,
+    #image-php,
+    #image-javaA,
+    .stage1 img,
+    .stage2 img {
+        width: 70% !important;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    /* Cartes centrales */
+    #Projet-Java,
+    #Projet-Python,
+    #Projet-HTML,
+    #Projet-Php,
+    #Projet-JavaA,
+    .python main .objectif,
+    .html main .objectif,
+    .java main .objectif,
+    .php main .objectif,
+    .javaA main .objectif,
+    .python main .competences,
+    .html main .competences,
+    .java main .competences,
+    .php main .competences,
+    .javaA main .competences,
+    .stage1 .contexte,
+    .stage2 .contexte,
+    .stage1 main .competences,
+    .stage2 main .competences {
+        width: 95% !important;
+    }
+
+    /* Boutons plus larges */
+    .telecharger-projet-html,
+    .telecharger-projet-java,
+    .pdf-link,
+    .bouton-html-sauvegardes a,
+    .bouton-java-preuve a,
+    .bouton-telecharger-rapport1 a,
+    .bouton-telecharger-rapport2 a {
+        width: 60% !important;
+    }
+
+    /* Footer responsive */
+    footer nav,
+    footer nav .contenu {
+        flex-direction: column;
+        margin-left: 0;
+        text-align: center;
+        gap: 1rem;
+    }
+
+}
