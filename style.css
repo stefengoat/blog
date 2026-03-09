@@ -1006,24 +1006,6 @@ main {
     flex-direction: column;
 }
 
-
-/*Veille */
-
-.veille main {
-    padding-top: 10%;
-}
-
-.veille main .veilleTechno{
-    font-size: 120%;
-    padding-left: 25%;
-    width: 80%;
-    text-shadow: 
-        -1px -1px 0 #FFFCF2,  
-         1px -1px 0 #FFFCF2,
-        -1px  1px 0 #FFFCF2,
-         1px  1px 0 #FFFCF2;
-}
-
 /*Footer*/
 
 footer {
@@ -1046,7 +1028,7 @@ footer ul {
     header nav ul {
         position: absolute;
         top: 100px;
-        right: -100%;
+        right: -110%;
         flex-direction: column;
         width: 100%;
         background-color: #F95738;
