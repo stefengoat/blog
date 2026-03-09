@@ -820,7 +820,7 @@ main {
     transition: 0.6s;
 }
 
-.bouton-telecharger-rapport1 a {
+.bouton-telecharger-rapport1 a, .bouton-telecharger-rapport2 a {
     background-color: #FFFCF2;
     color: #403D39;
     font-size: 100%;
@@ -833,35 +833,11 @@ main {
     transition: 0.4s ease;
 }
 
-.bouton-telecharger-rapport1 a:hover {
+.bouton-telecharger-rapport1 a:hover, .bouton-telecharger-rapport2 a:hover {
     color: #FFFCF2;
     background-color: #F95738;
     transform: scale(1.05);
     transition: 0.6s;
-}
-
-.bouton-telecharger-rapport2 a {
-    background-color: #F95738;
-    color: #FFFCF2;
-    font-size: 100%;
-    padding: 10px 20px;
-    border-radius: 16px;
-    border: 2px solid #403D39;
-    text-align: center;
-    display: inline-block;
-    margin-top: 5%;
-    transition: 0.4s ease;
-}
-
-.bouton-telecharger-rapport2 a:hover {
-    color: #403D39;
-    background-color: #FFFCF2;
-    transform: scale(1.05);
-    transition: 0.6s;
-}
-
-.stage1 main, .stage2 main {
-    padding-top: 10%;
 }
 
 /* Stage 1 et 2 */
