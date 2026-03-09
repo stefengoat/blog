@@ -28,6 +28,7 @@ body.accueil {
     url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='90' cy='70' r='35' fill='%232a2624'/></svg>") no-repeat;
     background-size: 100%, 100%, 100%;
     background-position: top right, bottom left, center right;
+
     background-size: cover;
     height: auto;
     min-height: 100vh;
@@ -54,8 +55,12 @@ body.presentation {
 
 /* fond bts sio*/
 body.bts{
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1900" cy="50" r="400" fill="%23453F3C"/></svg>'),
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="500" cy="1200" r="850" fill="%232a2624"/></svg>') ;
+    background:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='85' cy='10' r='35' fill='%23453F3C'/></svg>") no-repeat,
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='20' cy='80' r='50' fill='%232a2624'/></svg>") no-repeat;
+    background-size: 50%, 70%;
+    background-position: top right, bottom left;
+    
     background-size: cover;
     height: auto;
     min-height: 100vh;
@@ -64,8 +69,12 @@ body.bts{
 }
 
 body.python, body.html, body.java, body.php, body.javaA  {
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1900" cy="50" r="400" fill="%23453F3C"/></svg>'),
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="500" cy="1200" r="850" fill="%232a2624"/></svg>') ;
+    background:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='85' cy='15' r='35' fill='%23453F3C'/></svg>") no-repeat,
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='25' cy='85' r='50' fill='%232a2624'/></svg>") no-repeat;
+    background-size: 55%, 75%;
+    background-position: top right, bottom left;
+    
     background-size: cover;
     height: auto;
     min-height: 100vh;
@@ -74,9 +83,13 @@ body.python, body.html, body.java, body.php, body.javaA  {
 }
 
 /*fond stage*/
-body.stage {
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 100"><circle cx="-950" cy="550" r="1900" fill="%23453F3C"/></svg>')
-    ,url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1820" cy="1150" r="220" fill="%232a2624"/></svg>');
+body.stage, body.stage1, body.stage2 {
+    background:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='10' cy='50' r='70' fill='%23453F3C'/></svg>") no-repeat,
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='95' cy='90' r='20' fill='%232a2624'/></svg>") no-repeat;
+    background-size: 80%, 30%;
+    background-position: left center, right bottom;
+    
     background-size: cover;
     height: auto;
     min-height: 100vh;
@@ -84,27 +97,7 @@ body.stage {
     background-color: #FFFCF2;
 }
 
-body.stage1 {
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 100"><circle cx="-950" cy="550" r="1900" fill="%23453F3C"/></svg>')
-    ,url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1820" cy="1150" r="220" fill="%232a2624"/></svg>');
-    background-size: cover;
-    height: auto;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #FFFCF2;
-}
-
-body.stage2 {
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 100"><circle cx="-950" cy="550" r="1900" fill="%23453F3C"/></svg>')
-    ,url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1820" cy="1150" r="220" fill="%232a2624"/></svg>');
-    background-size: cover;
-    height: auto;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #FFFCF2;
-}
-
-/* fond veille*/
+/* fond veille
 body.veille {
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1900" cy="50" r="400" fill="%23453F3C"/></svg>'),
     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="500" cy="1200" r="850" fill="%232a2624"/></svg>') ;
@@ -112,51 +105,52 @@ body.veille {
     min-height: 100vh;
     margin: 0;
     background-color: #FFFCF2;
-}
+} */
 
 /* header*/
 header {
-    background-color: #F95738;
-    color: #FFFCF2;
-    height: 80px;
-    margin:20px;
-    border-radius: 16px;
     position: fixed;
-    padding-left: 2rem;
-    padding-right: 2rem;;
-    font-size: 18px;
-    align-items: center;
-    display: flex;
+    top: 20px;
+    left: 1%;
     width: 98%;
+    height: 80px;
+    color: #FFFCF2;
+    background-color: #F95738;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    z-index: 100;
 }
 
 .logo {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    text-transform: uppercase;
-    margin-right: auto;
 }
 
 .logo a {
     color: #FFFCF2;
 }
 
+header nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
 header nav, header nav .menu {
+    margin-left: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 header nav .menu li a {
-    position: relative;
     color: #FFFCF2;
-    font-size: 110%;
     font-weight: 600;
-    margin-left: 4rem;
-    border-radius: 16px;
+    padding: 10px 15px;
+    border-radius: 12px;
     transition: color 0.4s ease;
     background-color: #F95738;
-    padding: 12px;
 }
 
 header nav .menu li a:hover {
@@ -171,6 +165,8 @@ header nav #toggle {
     margin-left: 80px;
     cursor: pointer;
 }
+
+/* Bouton retour en haut */
 
 body .retour-haut {
     position: fixed;
@@ -203,13 +199,11 @@ body .retour-haut:hover {
 
 main {
     flex: 1;
-    padding-top: 120px;
+    padding-top: 10%;
+    padding-bottom: 5%;
 }
 
 /*accueil*/
-.accueil main {
-    padding-top: 10%;
-}
 
 .accueil main .bienvenue {
     padding-left: 12%;
@@ -335,10 +329,6 @@ main {
 
 /*Qui je suis ?*/
 
-.presentation main {
-    padding-top: 10%;
-}
-
 .presentation .donnees {
     display: flex;
     flex-direction: row;
@@ -398,10 +388,6 @@ main {
 
 /*BTS SIO*/
 
-.bts main {
-    padding-top: 10%;
-}
-
 #image-python, #image-html, #image-java, #image-php, #image-javaA {
     width: 40%;
     height: auto;
@@ -427,11 +413,12 @@ main {
 .bts main .python h2, .bts main .html h2, .bts main .java h2, .bts main .php h2, .bts main .javaA h2{
     margin-left: -10%;
     width: 80%;
+    color:#FFFCF2;
     text-shadow: 
-        -1px -1px 0 #FFFCF2,  
-         1px -1px 0 #FFFCF2,
-        -1px  1px 0 #FFFCF2,
-         1px  1px 0 #FFFCF2;
+        -1px -1px 0 #403D39,  
+         1px -1px 0 #403D39,
+        -1px  1px 0 #403D39,
+         1px  1px 0 #403D39;
 }
 
 .competences-links {
@@ -463,10 +450,6 @@ main {
 
 
 /* PPROJETS */
-
-.html main, .java main, .python main, .php main, .javaA main {
-    padding-top: 10%;
-}
 
 #Projet-Java, #Projet-Python, #Projet-HTML, #Projet-Php, #Projet-JavaA {
     width:40%;
@@ -788,10 +771,6 @@ main {
 
 /*Stage */
 
-.stage main {
-    padding-top: 5%;
-}
-
 .stage .donnees {
     display: flex;
     flex-direction: row;
@@ -801,7 +780,6 @@ main {
 
 .stage .gauche, .stage .droite {
     color:#FFFCF2;
-    padding: 5%;
     font-size: 150%;
     width: 50%;
     text-align: center;
@@ -809,15 +787,18 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.stage .droite {
-    color:#403D39;
-}
-
-.stage .texteG, .stage .texteD {
+.stage .texteG, .stage .texteD, .stage h1 {
     padding-top: 5%;
     padding-bottom: 5%;
+    text-shadow: 
+        -1px -1px 0 #403D39,  
+         1px -1px 0 #403D39,
+        -1px  1px 0 #403D39,
+         1px  1px 0 #403D39;
 }
 
 .bouton-savoir-plus-stage1 a, .bouton-savoir-plus-stage2 a {
@@ -842,7 +823,7 @@ main {
 .bouton-telecharger-rapport1 a {
     background-color: #FFFCF2;
     color: #403D39;
-    font-size: 130%;
+    font-size: 100%;
     padding: 10px 20px;
     border-radius: 16px;
     border: 2px solid #403D39;
@@ -859,26 +840,10 @@ main {
     transition: 0.6s;
 }
 
-.stage .texteD, .stage .droite h1 {
-    text-shadow: 
-        -1px -1px 0 #FFFCF2,  
-         1px -1px 0 #FFFCF2,
-        -1px  1px 0 #FFFCF2,
-         1px  1px 0 #FFFCF2;
-}
-
-.stage .texteG, .stage .gauche h1 {
-    text-shadow: 
-        -1px -1px 0 #403D39,  
-         1px -1px 0 #403D39,
-        -1px  1px 0 #403D39,
-         1px  1px 0 #403D39;
-}
-
 .bouton-telecharger-rapport2 a {
     background-color: #F95738;
     color: #FFFCF2;
-    font-size: 130%;
+    font-size: 100%;
     padding: 10px 20px;
     border-radius: 16px;
     border: 2px solid #403D39;
@@ -1089,64 +1054,64 @@ footer {
     background-color: #797774;
     color: #FFFCF2;
     padding: 3rem;
-    width: 100%;
+    text-align: center;
 }
 
-footer nav, footer nav .contenu {
+footer ul {
+    font-size: 130%;
     display: flex;
-    align-items: center;
-    margin-left: 8%;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
-footer nav .contenu li a {
-    position: relative;
-    color: #FFFCF2;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    padding: 12px;
-}
+@media (max-width: 900px) {
 
-
-
-
-@media (max-width: 820px) {
-    header nav .menu{
-        flex-direction: column;
-        row-gap: 2rem;
+    header nav ul {
         position: absolute;
+        top: 100px;
         right: -100%;
-        top: 110px;
+        flex-direction: column;
         width: 100%;
-        height: calc(100vh - 110px);
-        padding-top: 90px;
-        background: #fd8168;
-        z-index: 10;
-        transition: right 0.4s ease;
+        background-color: #F95738;
+        padding: 2rem 0;
+        transition: right 0.3s ease;
     }
 
-    header nav .menu.active {
+    header nav ul.active {
         right: 0;
     }
 
-    header nav .menu li a {
-        margin-left: unset;
-        font-size: 2rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: #FFFCF2;
-        width: 395px;
-        height: 60px;
-        line-height: 60px;
-        display: block;
+    .flex-row {
+        flex-direction: column;
         text-align: center;
-        border-radius: 5px;
-        transition: 0.25s ease;
     }
 
-    header nav .menu li a:hover {
-        background: white;
-        color: #fd8168;
+    main {
+        padding-top: 20%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header {
+        height: 70px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding-top: 100px;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    main {
+        padding-top: 20%;
     }
 }
