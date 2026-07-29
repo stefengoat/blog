@@ -54,7 +54,22 @@ body.presentation {
 }
 
 /* fond bts sio*/
-body.bts{
+body.bts {
+   background:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='15' cy='15' r='30' fill='%23453F3C'/></svg>") no-repeat,
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='85' cy='85' r='45' fill='%232a2624'/></svg>") no-repeat;
+    background-size: 40%, 60%, 25%;
+    background-position: top left, bottom right, center;
+
+    background-size: cover;
+    height: auto;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #FFFCF2;
+}
+
+/* fond projets*/
+body.projets {
     background:
     url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='85' cy='10' r='35' fill='%23453F3C'/></svg>") no-repeat,
     url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='20' cy='80' r='50' fill='%232a2624'/></svg>") no-repeat;
@@ -97,15 +112,20 @@ body.stage, body.stage1, body.stage2 {
     background-color: #FFFCF2;
 }
 
-/* fond veille
-body.veille {
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="1900" cy="50" r="400" fill="%23453F3C"/></svg>'),
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 -50 0"><circle cx="500" cy="1200" r="850" fill="%232a2624"/></svg>') ;
+/*fond experience */
+body.experience {
+    background: 
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'><circle cx='1900' cy='50' r='400' fill='%23453F3C'/></svg>") no-repeat,
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'><circle cx='500' cy='1200' r='850' fill='%232a2624'/></svg>") no-repeat;
+    background-size: 80%, 30%;
+    background-position: left center, right bottom;
+
     background-size: cover;
+    height: auto;
     min-height: 100vh;
     margin: 0;
     background-color: #FFFCF2;
-} */
+} 
 
 /* header*/
 header {
@@ -386,7 +406,63 @@ main {
          1px  1px 0 #403D39;
 }
 
-/*BTS SIO*/
+/* BTS SIO */
+
+.bts .donnees {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.bts .projets, .bts .stages {
+    width: 46%;
+    border-radius: 50px;
+    font-size: 130%;
+    background-color: #FFFCF2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #403D39;
+    color: #403D39;
+}
+
+.bts .projets h1, .bts .stages h1 {
+    text-decoration: underline;
+    text-decoration-color: #403D39;
+    margin-bottom: 3%;
+}
+
+.bts .donnees .bouton-projets, .bts .donnees .bouton-stage {
+    margin-top: 5%;
+    width: 15%;
+    border-radius: 50px;
+    font-size: 120%;
+    background-color: #F95738;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #403D39;
+    color:#FFFCF2;
+    transition: 0.4s ease;
+    
+}
+
+.bts .donnees .bouton-projets:hover, .bts .donnees .bouton-stage:hover {
+    transform: scale(1.05);
+    background-color: #FFFCF2;
+    color: #403D39;
+    text-decoration: none;
+}
+
+
+/* PROJETS */
 
 #image-python, #image-html, #image-java, #image-php, #image-javaA {
     width: 40%;
@@ -402,15 +478,15 @@ main {
     transition: 0.4s ease;
 }
 
-.bts main .python, .bts main .html, .bts main .java, .bts main .php, .bts main .javaA{
+.projets main .python, .projets main .html, .projets main .java, .projets main .php, .projets main .javaA{
     display: flex;
     align-items: center;
     margin-bottom: 5%;
     padding-left: 15%;
 }
 
-.bts main .python h1, .bts main .html h1, .bts main .java h1, .bts main .php h1, .bts main .javaA h1,
-.bts main .python h2, .bts main .html h2, .bts main .java h2, .bts main .php h2, .bts main .javaA h2{
+.projets main .python h1, .projets main .html h1, .projets main .java h1, .projets main .php h1, .projets main .javaA h1,
+.projets main .python h2, .projets main .html h2, .projets main .java h2, .projets main .php h2, .projets main .javaA h2{
     margin-left: -10%;
     width: 80%;
     color:#FFFCF2;
@@ -447,7 +523,6 @@ main {
     color: #FFFCF2;
     
 }
-
 
 /* PPROJETS */
 
@@ -1006,6 +1081,23 @@ main {
     display: flex;
     flex-direction: column;
 }
+
+/*Experience*/
+
+.experience .maintenance {
+    color:#FFFCF2;
+    font-size: 150%;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
 
 /*Footer*/
 

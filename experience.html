@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <script> src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gasp.min.js"</script>
-    <title>Blog - Stefen - Accueil </title>
+    <title>Blog - Stefen - Expérience</title>
 </head>
-<body class="accueil">
-
+<body class="experience">
     <header>
         <class class="logo">
             <a href="index.html">STEFEN</a>
@@ -28,42 +27,10 @@
     </header>
 
     <main>
-        <div class="bienvenue">
-            <h1 id="Bienvenue"> Bienvenue</h1>
-            <h2 id="Blog">Sur le protefolio et blog de</h2>
-            <h1 id="Stefen">Stefen Rialland</h1>
+        <div class="maintenance">
+            <h1>En maintenance</h1>
         </div>
-
-        <div class="moi">
-            <div class="texte">
-                <h1>Etudiant en informatique</h1>
-                <h2>en BTS SIO</h2>
-                <h2>au lycée</h2>
-            </div>
-            <img id="joliverie" src="images/la-joliverie-logo.svg">
-
-            <div class="texte1">
-                <h2>Contact lycée :</h2>
-                <h2>srialland@la-joliverie.com</h2>
-            </div>
-
-
-
-            <div class="bouton-moi">
-                <a href="presentation.html">Découvre-moi</a>
-            </div>
-        </div>
-
-        <div class="bonus">
-            <h1>Découvre aussi !</h1>
-            <div class="bouton-annee">
-                <a href="bts.html">Contenu de l'année</a>
-            </div>
-            <div class="bouton-stage">
-                <a href="stage.html">Mes stages</a>
-            </div>
-        </div>
-
+        
     </main>
 
 
@@ -81,13 +48,11 @@
          </nav>
     </footer>
 
+
+
     <a href="#" class="retour-haut">
         <span class="material-symbols-outlined">arrow_upward</span>
     </a>
-
-
-
-
 
     <script>
         const menu = document.querySelector('.menu');
@@ -97,14 +62,14 @@
             menu.classList.toggle('active');
         }
 
-        window.addEventListener('scroll', function() {
-        var boutonRetour = document.querySelector('.retour-haut');
-        if (window.scrollY > 1000) {
-            boutonRetour.classList.add('visible');
-        } else {
-            boutonRetour.classList.remove('visible');
+        function openPdf(pdfUrl) {
+            document.getElementById("pdfModal").classList.remove("hidden");
+            document.querySelector(".pdf-content iframe").src = pdfUrl;
         }
-        });
+
+        function closePdfModal() {
+            document.getElementById("pdfModal").classList.add("hidden");
+        }
     </script>
     
 </body>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script> src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gasp.min.js"</script>
+    <title>Blog - Stefen - BTS SIO</title>
+</head>
+<body class="bts">
+    <header>
+        <class class="logo">
+            <a href="index.html">STEFEN</a>
+        </class>
+        
+        <nav>
+           <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Qui je suis ?</a></li>
+            <li><a href="bts.html">BTS SIO</a></li>
+            <li><a href="experience.html">Expérience</a></li>
+           </ul>
+           <i class="fa-solid fa-bars" id="toggle"></i>
+        </nav>
+    </header>
+
+    <main>
+        <div class="donnees">
+
+            <div class="projets">
+                <h1>Mes projets</h1>
+                <p class="texte">
+                    Au cours de mon BTS Services Informatiques aux Organisations (SIO), j'ai réalisé plusieurs projets qui m'ont permis de mettre en pratique les compétences acquises durant ma formation. 
+                    Ces réalisations couvrent différents domaines de l'informatique, tels que le développement d'applications, la gestion de bases de données, 
+                    gestion de sites web ou encore la conception de solutions répondant à des besoins concrets.<br>
+                    <br>
+                    Chaque projet présenté illustre les technologies utilisées, les objectifs fixés, les problématiques rencontrées ainsi que les solutions mises en œuvre. 
+                    Ils témoignent de mon évolution technique, de ma capacité à travailler sur des projets concrets et de mon expérience acquise tout au long de mon parcours en BTS SIO.<br>
+                    <br>
+                    Afin d'en apprendre plus sur chacun des projets, cliquez sur le logo à gauche de chaque intitulé, qui vous renverra vers une nouvelle page plus enrichie.
+                </p>
+
+                    <a href="projets.html" class="bouton-projets">Projets</a>
+
+            </div>
+
+            <div class="stages">
+                <h1>Mes stages</h1>
+                <p class="texte">
+                    Dans le cadre de mon BTS Services Informatiques aux Organisations (SIO), j'ai effectué plusieurs stages en entreprise afin de mettre en pratique les connaissances 
+                    acquises en formation et de découvrir le fonctionnement d'un environnement professionnel.<br>
+                    <br>
+                    Ces expériences m'ont permis de participer à des projets concrets, de développer mes compétences techniques et de travailler sur des problématiques réelles. 
+                    Elles ont également renforcé mon autonomie, ma capacité d'adaptation et mon approche du travail en équipe.<br>
+                    <br>
+                    Sur la page dédiée ci-dessous, vous pourrez découvrir le détail de chacun de mes stages, les missions qui m'ont été confiées, 
+                    les technologies utilisées ainsi que les compétences développées au cours de ces expériences professionnelles.
+                </p>
+                
+
+                <a href="stage.html" class="bouton-stage">Stages</a>
+                
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+    <footer>
+        <nav>
+            <ul class="contenu">
+             <li><a href="index.html">Accueil</a></li>
+             <li><a href="presentation.html">Qui je suis ?</a></li>
+             <li><a href="bts.html">BTS SIO</a></li>
+             <li><a href="experience.html">Expérience</a></li>
+            </ul>
+            <p>Contact: stefen.rialland@gmail.com</p>
+         </nav>
+    </footer>
+
+
+
+    <a href="#" class="retour-haut">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </a>
+
+    <script>
+        const menu = document.querySelector('.menu');
+        const toggle = document.getElementById('toggle');
+
+        toggle.onclick = function(){
+            menu.classList.toggle('active');
+        }
+
+        function openPdf(pdfUrl) {
+            document.getElementById("pdfModal").classList.remove("hidden");
+            document.querySelector(".pdf-content iframe").src = pdfUrl;
+        }
+
+        function closePdfModal() {
+            document.getElementById("pdfModal").classList.add("hidden");
+        }
+    </script>
+    
+</body>
+</html>
